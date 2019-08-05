@@ -2,8 +2,10 @@
 This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Junfei Cai.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
+
+import math
 
 
 def main():
@@ -30,9 +32,13 @@ def double_a_float():
          -6.28
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
+    print('============== ONE ==============')
+    user_input = float(input('give me a float: '))
+    print(2 * user_input)
+    print('============== END ==============')
 
 
 def print_an_integer_many_times():
@@ -61,9 +67,14 @@ def print_an_integer_many_times():
          10
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
+    print('============== TWO ==============')
+    user_input = int(input('give me a integer: '))
+    for _ in range(user_input):
+        print(2 * user_input)
+    print('============== END ==============')
 
 
 def print_an_integer_many_times_on_one_row():
@@ -80,12 +91,18 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # ------------------------------------------------------------------
+    print('============== THREE ==============')
+    user_input = int(input('give me a integer: '))
+    for _ in range(user_input):
+        print(2 * user_input, end='')
+    print()
+    print('=============== END ===============')
 
 
 def input_it_all():
@@ -120,9 +137,21 @@ def input_it_all():
          Peace & Love.
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
+    print('=============== FOUR ===============')
+
+    user_input_float = float(input('give me a float: '))
+    user_input_int = int(input('give me a integer: '))
+    user_input_str = str(input('give me a string: '))
+
+    for _ in range(user_input_int):
+        print(math.sqrt(user_input_float))
+    for _ in range(user_input_int):
+        print(user_input_str)
+
+    print('================ END ===============')
 
 
 # ----------------------------------------------------------------------
